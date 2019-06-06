@@ -1,0 +1,12 @@
+<%= form_for(@item) do |f| %>
+  <label>상품이름</label><br>
+  <%= f.text_field :title %><br><br>
+  
+  <label>상품가격</label><br>
+  <%= f.number_field :price %><br><br>
+  
+  <label>상품설명</label><br>
+  <%= f.text_area :description, size: "60x12" %><br><br>
+  
+  <%= f.submit "저장" %>
+<% end %>
